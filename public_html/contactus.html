@@ -1,0 +1,168 @@
+<!DOCTYPE HTML>
+<html>
+<script src='https://www.google.com/recaptcha/api.js'></script>
+	<head>
+		<title>Contact Us!</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+		<body class="is-preload">
+			<!-- Header -->
+				<header id="header">
+					<a class="logo" href="/">Blue Ocean Engineering Services</a>
+					<nav>
+						<a href="#menu">Menu</a>
+					</nav>
+				</header>
+
+		<!-- Nav -->
+		<nav id="menu">
+			<ul class="links">
+				<li><a href="/">Home</a></li>
+				<li><a href="aboutUs.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+			</ul>
+		</nav>
+
+		<!-- Heading -->
+			<div id="heading" >
+				<h1>Contact Us</h1>
+            </div>
+            
+			<section id="main" class="wrapper">
+            <div class="inner">
+                <div class="content">
+                        <div class="jumbotron jumbotron-sm">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-sm-12 col-lg-12">
+                                            <h1 class="h1">
+                                               <small style="color: gray">Feel free to contact us.</small></h1>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <br><br>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="well well-sm">
+                                <form method="post" action="contact.php">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="Name">
+                                                Name</label>
+                                            <input type="text" class="form-control" name="Name" id="Name" placeholder="Enter name" required="required" />
+                                        </div><br>
+                                        <div class="form-group">
+                                            <label for="Email">
+                                                Email Address</label>
+                                            <div class="input-group">
+                                                <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span>
+                                                </span>
+                                                <input type="email" class="form-control" name="Email" id="Email" placeholder="Enter email" required="required" /></div>
+                                        </div><br>
+                                        <div class="form-group">
+                                            <label for="Subject">
+                                                Subject</label>
+                                            <select id="Subject" name="Subject" class="form-control" required="required">
+                                                 <option value="" disabled selected>Select an option</option>
+                                                 <option style="display:none;" type="text" id="website" name="website"/>
+                                                <option value="Service">General Customer Service</option>
+                                                <option value="Suggestions">Suggestions</option>
+                                                <option value="Product Support">Product Support</option>
+                                                <option value="Other">Other</option>
+                                            </select>
+                                        </div><br>
+                                    </div><br>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="name">
+                                                Message:</label>
+                                            <textarea name="Message" id="Message" class="form-control" rows="10" cols="50" required="required"
+                                                placeholder="Message"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                        <button type="submit" class="btn btn-primary pull-right" id="btnContactUs" disabled>
+                                            Send Message</button>
+                                            <br><br>
+                                            <div style="margin: auto; width: 100%;" class="g-recaptcha" data-callback="recaptchaCallback" data-sitekey="6LdVCIkUAAAAANxzx3G47zJxdf_K2oq-ZQa0k7jA"></div>
+                                            <br>
+                                           <script>
+                                            function recaptchaCallback() {
+    						$('#btnContactUs').removeAttr('disabled title');
+						};
+                                            </script>
+                                   
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <form>
+                            <legend><span class="glyphicon glyphicon-globe"></span></legend>
+                            <address>
+                                <strong>Blue Ocean Engineering Services</strong><br>
+                                <abbr title="Phone:US">
+                                    US:</abbr>
+                                +9999999999 <br>
+                                <abbr title="Phone:Ind">
+                                    IND:</abbr>
+                                +91-999999999
+                            </address>
+                            <address>
+                                <a href="mailto:info@blueoceanengg.com">abc@outlook.com</a>
+                            </address>
+                            </form>
+                        </div>
+                    </div>
+                </div>  
+                </div>
+                </div>              
+			</section>
+<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+					<div class="content">
+						<section>
+							<h3>Blue Ocean Engineering Services</h3>
+							<p>We are a company focusing on steel structural detailing and drafting services.</p>
+						</section>
+						<section></section>
+						<section>
+							<h4>Know more about us</h4>
+							<ul class="alt">
+								<li><a href="aboutUs.html"> About Us </a></li>
+								<li><a href="services.html"> Services </a></li>
+								<li><a href="projects.html"> Projects </a></li>
+								<li><a href="contactus.html"> Contact Us </a></li>
+							</ul>
+						</section>
+					</div>
+					<div class="copyright">
+						&copy;  <a href="/">Blue Ocean Engineering</a>
+					</div>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
